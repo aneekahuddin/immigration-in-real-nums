@@ -107,7 +107,10 @@ html.black-sparse  body {
   z-index: 10000;
 }
 .infobox.first {
-  margin-top: 20000px;
+  margin-top: 75000px;
+}
+.infobox.second {
+  margin-top: 12500px;
 }
 .infobox {
   margin: auto;

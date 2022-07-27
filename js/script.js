@@ -1,3 +1,4 @@
+// ToDo: Add in a music button (start and stop)
 var prisoners = document.getElementById('prisoners');
 var thousand = document.getElementById('thousand');
 var counter = document.getElementById('counter');
