@@ -135,7 +135,7 @@ function getScrollCount() {
 
 function setHeight() {
   var browser_width = window.innerWidth || document.body.clientWidth;
-  var icons_per_card = 100;
+  var icons_per_card = 5;
   var pixel_height_per_card = 500;
   var pixel_width_per_card = 500;
 
