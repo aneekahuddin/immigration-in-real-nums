@@ -2,19 +2,19 @@
 
 ## About
 
-[Incarceration in real numbers](https://mkorostoff.github.io/incarceration-in-real-numbers) is a data visualization project by [Matt Korostoff](https://mkorostoff.github.io/). It is not affiliated with or sponsored by any organization. It launched in autumn 2020.
+[Immigration in real numbers](https://aneekahuddin.github.io/immigration-in-real-nums) is a data visualization project by [Aneekah Uddin](https://aneekahuddin.github.io/). It was born out of the [Princeton Ida B. Wells Just Data Lab](https://www.thejustdatalab.com/). It launched in Summer/Fall 2022.
+
+This code was forked from and adapted to address a different social issue than the original data visualization. The original, [Incarceration in real numbers](https://mkorostoff.github.io/incarceration-in-real-numbers) is a data visualization project by [Matt Korostoff](https://mkorostoff.github.io/). It is not affiliated with or sponsored by any organization. It launched in autumn 2020.
 
 ## A word about words
 
-The terms "jail" and "prison" are not interchangeable. A jail is a place where accused criminals are held while awaiting trial, or where convicted criminals serve short sentences for minor crimes. Jails are typically operated by county or city governments. A prison is an institution where convicted criminals are held for serious crimes, typically serving sentences of a year or more. Prisons are typically operated by the federal or state governments. [Rikers Island](https://en.wikipedia.org/wiki/Rikers_Island) is a jail. [Sing sing](https://en.wikipedia.org/wiki/Sing_Sing) is a prison.
-
 ## Alternate Versions
 
-- [Click here to view a version with just the icons](https://mkorostoff.github.io/incarceration-in-real-numbers/?mute=1), without all the commentary
-- Github user [SMSadegh19](https://github.com/SMSadegh19) has published a [version translated into Persian](https://persianhodhod.ir/prisoners/).
-
+- [Click here to view a version with just the icons](https://aneekahuddin.github.io/immigration-in-real-nums/?mute=1), without all the commentary
 
 ## Table of Contents
+
+***This Table of Contents has yet to be updated for the immigration project. Sit tight, we will soon have it working. Until then, enjoy the visualization!***
 
 #### Understanding the size of the problem
 
@@ -42,9 +42,9 @@ The terms "jail" and "prison" are not interchangeable. A jail is a place where a
 
 ## Sources and Methodology
 
-See [SOURCES.md](https://github.com/MKorostoff/incarceration-in-real-numbers/blob/master/SOURCES.md)
+See [SOURCES.md](https://github.com/aneekahuddin/immigration-in-real-nums/blob/master/SOURCES.md)
 
 ## Related works
 
-Incarceration in Real Numbers is part of my ongoing war on [scope insensitivity](https://www.lesswrong.com/posts/2ftJ38y9SRBCBsCzy/scope-insensitivity). If you enjoyed this project, you may also enjoy [Wealth Shown To Scale](https://mkorostoff.github.io/1-pixel-wealth/) and [Hundred Thousand Faces](https://mkorostoff.github.io/hundred-thousand-faces/).
+TBD
 
