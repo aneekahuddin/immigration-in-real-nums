@@ -44,7 +44,8 @@ This code was forked from and adapted to address a different social issue than t
 
 See [SOURCES.md](https://github.com/aneekahuddin/immigration-in-real-nums/blob/master/SOURCES.md)
 
+## Extensions of this Project
 ## Related works
-
 TBD
+## Feedback and Iterations of the Project
 
