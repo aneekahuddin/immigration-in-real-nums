@@ -48,7 +48,6 @@ h1 {
 .infobox.thousand {
   max-width: 100%;
   width: 100%;
-  background-color: #0037ff8c;
 }
 .infobox.thousand .infobox-inner {
   box-shadow: -5px 5px 5px #000000ab;
@@ -729,12 +728,10 @@ p:last-child {
 }
 #until-recently .infobox-inner,
 #since-it-began .infobox-inner {
-  width: 30%;
   border: 2px solid;
 }
 #reverse-correlation-1 .infobox-inner,
 #reverse-correlation-2 .infobox-inner {
-  width: 50%;
   border: 2px solid;
 }
 #since-it-began {
@@ -1113,7 +1110,7 @@ blockquote strong {
     width: 125px;
     background-color: #ece62a;
     height: auto;
-    padding: 5px;
+    padding: 0px 5px 5px 5px;
     display: block;
     font-size: 14px;
     text-align: left;
