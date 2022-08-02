@@ -14,18 +14,17 @@ html, body {
 .subtitle,
 .title {
   background-color: #e2dcc6;
-  font-size: 24px;
 }
 .subtitle {
   text-align: center;
   padding: 13px;
 }
 .subtitle .description {
-  font-size: 14px;
+  font-size: 12px;
   font-style: italic;
 }
 .scroll-down {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
 }
 h1 {
@@ -60,6 +59,24 @@ h1 {
   min-height: 200000px;
   background-color: #fff0dd;
 }
+.black .prisoners {
+  background-image: url('img/bg/black.svg');
+}
+.blue .prisoners {
+  background-image: url('img/bg/blue.svg');
+}
+.red .prisoners {
+  background-image: url('img/bg/red.svg');
+}
+.black-sparse .prisoners {
+  background-image: url('img/bg/black-sparse.svg');
+  background-size: 1000px;
+}
+.not-free .prisoners {
+  background-image: url('img/bg/grey.svg');
+  background-size: 1000px;
+  background-color: black;
+}
 html.black,
 html.blue,
 html.red,
@@ -89,11 +106,11 @@ html.black-sparse  body {
   position: sticky;
   z-index: 10000;
 }
-.infobox.covid {
-  margin-top: 12500px;
+.infobox.first {
+  margin-top: 7500px;
 }
-.infobox.deaths {
-  margin-top: 15000px;
+.infobox.second {
+  margin-top: 12500px;
 }
 .infobox {
   margin: auto;
@@ -167,8 +184,26 @@ html.black-sparse  body {
 #country-rank.expandable.expanded .infobox-inner {
   height: 5110px;
 }
+.expandable.expanded .expando {
+  display: none;
+}
 .expandable.expanded .infobox-inner {
   position: relative;
+}
+.expando {
+  position: absolute;
+  right: 8px;
+  bottom: 7px;
+  font-size: 10px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 5px;
+  box-shadow: 1px 1px 1px black;
+  cursor: pointer;
+  display: block;
+}
+.expando:active:focus {
+  box-shadow: 0;
 }
 .image {
   margin-top: 25px;
@@ -181,6 +216,14 @@ html.black-sparse  body {
 .image .infobox-inner img {
   width: 100%;
   height: auto;
+}
+.list-of-states {
+  columns: 3;
+  font-size: 12px;
+}
+.state-incarcerated {
+  color: red;
+  font-weight: bold;
 }
 .infobox-inner > h2 {
   margin-top: 0;
@@ -197,6 +240,12 @@ html.black-sparse  body {
 .chart.expandable .bar {
   padding-left: 0;
   padding-right: 0;
+}
+#casualties {
+  margin-top: 2000px;
+}
+#casualties .bar {
+  min-height: 70px;
 }
 .bar {
   background-color: yellowgreen;
@@ -371,6 +420,29 @@ p:last-child {
   font-size: 18px;
   font-weight: bold;
 }
+.stalin .vertical-bars .bar {
+  background-color: #313131;
+  color: white;
+  text-align: center;
+  width: 25%;
+}
+.stalin .vertical-bars .stalin-bar {
+  background-color: #CD0000;
+  background-image: url(img/stalin.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.repression .vertical-bars .bar {
+
+}
+.vertical-bars .bar.white-men {
+  background-color: white;
+}
+.vertical-bars .bar.black-men {
+  background-color: black;
+  color: white;
+}
 .infobox-near-near {
   margin-top: 100px;
 }
@@ -382,6 +454,10 @@ p:last-child {
 }
 .infobox-quarter {
   margin-top: 2500px;
+}
+#dots .infobox-inner {
+  max-width: 585px;
+  display: block;
 }
 #freedom-wrapper {
   height: 10000px;
@@ -522,6 +598,20 @@ p:last-child {
   margin-top: 100%;
   flex-wrap: wrap;
 }
+.eu-country {
+  height: 200px;
+}
+.eu-country:nth-child(odd) {
+  background-color: #68BC36;
+}
+.eu-country:nth-child(even) {
+  background-color: #BFFFBF;
+}
+.eu-country-inner {
+  position: absolute;
+  margin-left: 15px;
+  font-size: 14px;
+}
 .eu-list {
   font-size: 11px;
   width: 50%;
@@ -534,6 +624,53 @@ p:last-child {
 }
 .eu-list-inner {
   background-color: #57c7ff;
+}
+.eu-country-inner:after {
+  width: 0;
+  height: 180px;
+  content: '';
+  border-right: 2px solid black;
+  position: absolute;
+  top: 21px;
+  left: 0px;
+}
+.eu-country-inner {
+  display: none;
+}
+.poland .eu-country-inner {
+  top: -180px;
+  display: block;
+}
+.poland .eu-country-inner:after {
+  height: 160px;
+}
+.france .eu-country-inner {
+  top: -150px;
+  display: block;
+}
+.france .eu-country-inner:after {
+  height: 130px;
+}
+.germany .eu-country-inner {
+  top: -120px;
+  display: block;
+}
+.germany .eu-country-inner:after {
+  height: 100px;
+}
+.italy .eu-country-inner {
+  top: -90px;
+  display: block;
+}
+.italy .eu-country-inner:after {
+  height: 70px;
+}
+.spain .eu-country-inner {
+  top: -60px;
+  display: block;
+}
+.spain .eu-country-inner:after {
+  height: 40px;
 }
 .funnel-item.last {
   margin-top: 40%;
@@ -616,6 +753,136 @@ p:last-child {
 .fixed {
   position: fixed;
 }
+#bubbles {
+  height: 830px;
+  width: 1230px;
+  position: relative;
+  overflow: visible;
+  background-color: #57c8ff;
+  transform-origin: top center;
+  display: none;
+}
+#bubbles:after {
+  background-repeat: no-repeat;
+  display: block;
+  height: 108%;
+  content: '';
+  background-image: url(img/bubble_background.svg);
+  width: 105%;
+  position: absolute;
+  left: -55px;
+  top: -2px;
+  z-index: -1;
+  background-color: #58c7ff;
+  background-position: left 16px;
+}
+#bubbles-outer {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+#bubbles-inner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.country-bubble {
+  background-color: yellowgreen;
+  border: 1px solid #517700;
+  border-radius: 100%;
+  font-size: 18px;
+  text-align: center;
+  font-family: sans-serif;
+  white-space: nowrap;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms;
+}
+.country-bubble-inner {
+  z-index: 1000;
+}
+.country-bubble:hover {
+  z-index: 1000 !important;
+  color: black;
+  background-color: #b0b0ff;
+}
+.country-bubble-small.country-bubble-high-rate {
+  justify-content: flex-start;
+}
+.country-bubble-small .country-bubble-inner {
+  margin-left: calc(110%);
+  border-radius: 5px;
+  padding: 3px;
+}
+.country-bubble-small:hover .country-bubble-inner {
+  background-color: #b0b0fe;
+  border: 1px solid blue;
+}
+.country-bubble-small {
+  color: transparent;
+  box-shadow: none;
+  justify-content: flex-start;
+}
+.japan,
+.country-bubble-high-rate {
+  color: black;
+}
+#country-bubble-usa {
+  background-color: #ff6565;
+  box-shadow: -2px 2px 6px #4c5a61;
+}
+#bubble-header {
+  background-color: #8ec4fb;
+  padding: 1%;
+  transform-origin: top left;
+  position: relative;
+  max-width: 50%;
+  box-shadow: 2px 2px 5px #255269;
+  z-index: 10;
+  left: 2.5%;
+  top: 2.5%;
+}
+.bubble-section {
+  display: none;
+}
+.bubble-section .infobox-inner {
+  background-color: lightblue;
+  box-shadow: none;
+  border: 2px solid black;
+}
+#bubble-header h2 {
+  font-size: 30px;
+  margin-top: 0;
+}
+#bubble-header-description {
+  margin-bottom: 1em;
+}
+.form-wrapper {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: flex;
+}
+.form-wrapper label {
+  font-size: 18px;
+}
+.form-wrapper > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  padding-top: 10px;
+}
+#invest-in-prevention h2 {
+  font-size: 100px;
+  margin: 0;
+  text-align: center;
+}
 blockquote {
   font-style: italic;
   font-size: 0.9em;
@@ -624,9 +891,37 @@ blockquote {
 blockquote strong {
   color: #a90000;
 }
+#bubbles-scale-mobile-top,
+#bubbles-scale-mobile-left {
+  display: none;
+}
+#invest-in-prevention .infobox-inner {
+  background-color: #ffd438;
+  box-shadow: none;
+}
+#animated-letters {
+  max-width: 100%;
+}
+#animated-letters path {
+  stroke-dasharray: 330;
+  stroke-width: 12px;
+  fill: none;
+  transition: stroke-dashoffset 4s;
+  stroke-dashoffset: 330;
+  stroke-linecap: round;
+}
+#animated-letters.animate path {
+  stroke-dashoffset: 660;
+}
+#animated-letters#animated-letters path {
+  stroke: #921f4b;
+}
 .infobox-yellow .infobox-inner {
   background-color: #ffd438;
   box-shadow: none;
+}
+#bubbles {
+  transform-origin: 15% top;
 }
 #table {
   max-width: 90%;
@@ -708,6 +1003,27 @@ blockquote strong {
   font-size: 70px;
   margin-bottom: 0;
 }
+@media (min-width: 451px) {
+  #bubbles-outer {
+    overflow: visible;
+  }
+  #bubbles-outer-second {
+    position: sticky;
+    top: 50px;
+    overflow: hidden;
+    padding: 0 0 50px 50px;
+  }
+}
+@media (min-width: 1230px) {
+  #bubbles {
+    transform-origin: 50% top;
+  }
+}
+@media (max-width: 1000px) {
+  #bubbles {
+    transform-origin: 5% top;
+  }
+}
 @media (max-width: 799px) {
   .table-cell {
     font-size: 14px;
@@ -737,8 +1053,21 @@ blockquote strong {
     flex: 1 1 50%;
     font-weight: bold;
   }
+  #bubbles {
+    transform-origin: 0 top;
+  }
+  #invest-in-prevention h2 {
+    font-size: 50px;
+  }
+  #bubble-header h2,
+  #bubble-header label {
+    font-size: 24px;
+  }
   .form-wrapper {
     font-size: 12px;
+  }
+  .country-bubble {
+    font-size: 25px;
   }
   .counter,
   .main {
@@ -871,6 +1200,9 @@ blockquote strong {
     padding: 5px;
     font-size: 11px;
   }
+  #casualties .bar.highlighted {
+    padding-right: 50%;
+  }
   #freedom, #better-world {
     font-size: 24px;
     width: 300px;
@@ -929,6 +1261,41 @@ blockquote strong {
   .funnel-item.fourth:before,
   .funnel-item.fifth:before {
     display: none;
+  }
+  .eu {
+    margin-top: 200%;
+  }
+  .eu-country-inner {
+    margin-left: 5px;
+  }
+  .eu-country-inner:after {
+    left: 0px;
+    border-right: 1px solid black;
+  }
+  .eu-list {
+    width: 100%;
+    font-size: 8px;
+    background-position: 41% 3px;
+    background-size: 24% 60px;
+    padding-top: 25px;
+    padding-right: 5px;
+  }
+  .repression .vertical-bars .bar {
+    font-size: 9px;
+    margin-left: 0;
+    margin-right: 1px;
+    box-shadow: none;
+    border: 1px solid #65920b;
+    width: 21%;
+  }
+  .repression .infobox-inner {
+    padding: 5px;
+  }
+  #dots {
+    height: 3500px;
+  }
+  #dots img {
+    width: 100%;
   }
   .inset-text-mob.bar-inner {
     width: calc(100% - 10px);
@@ -999,7 +1366,141 @@ blockquote strong {
   }
 }
 @media (max-width: 450px) {
-.mobile-hidden {
+  #dots {
+    height: 2350px;
+  }
+  .eu-list {
+    background-position: 41% -10px;
+  }
+  .bubble-section {
+    display: flex;
+    height: 1000px;
+  }
+  #bubbles {
+    margin-top: 0;
+    height: 80vh;
+    width: 97%;
+    margin: auto;
+    transform: none !important;
+    border: none;
+    border: 3px solid black;
+  }
+  #bubbles-outer-second {
+    width: 100%;
+    position: sticky;
+    top: 11vh;
+    overflow: hidden;
+  }
+  #bubble-header h2,
+  #bubble-header label {
+
+  }
+  #bubbles-outer {
+    overflow: visible;
+    height: 17000px;
+    margin-bottom: -15000px;
+  }
+  #bubble-header .form-wrapper {
+    margin-bottom: 20px;
+  }
+  #bubble-header .form-wrapper input.release {
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+  }
+  #bubble-header {
+    display: none;
+    background-color: #57c8ff;
+    position: absolute;
+    top: -130%;
+    max-width: 120%;
+    padding: 60px;
+    margin: auto;
+    width: 90%;
+    left: 0;
+    box-shadow: none;
+  }
+  #bubble-header-description {
+    font-size: 40px;
+    font-style: italic;
+  }
+  #bubbles:after {
+    display: none;
+  }
+  .country-bubble {
+    font-size: 15px;
+  }
+  #usa-bubble-count,
+  #usa-bubble-rate {
+    font-size: 11px
+  }
+  #usa-bubble-rate {
+    margin-top: 5px;
+  }
+  #bubbles-scale-mobile-left,
+  #bubbles-scale-mobile-top {
+    display: block;
+    color: #036698;
+  }
+  #bubbles-scale-mobile-top .tick-mark,
+  #bubbles-scale-mobile-left .tick-mark {
+
+  }
+  #bubbles-scale-mobile-top .tick-mark {
+    font-size: 13px;
+    margin-left: 31%;
+    border-left: 2px solid #036698;
+    padding-left: 2px;
+    padding-bottom: 5px;
+  }
+  #bubbles-scale-mobile-top .line-label {
+    position: absolute;
+    font-size: 10px;
+    top: 3px;
+    left: 4px;
+    width: 10px;
+  }
+  #bubbles-scale-mobile-left {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 80vh;
+    z-index: 1;
+  }
+  #bubbles-scale-mobile-left .line-label {
+    font-size: 12px;
+    top: 70%;
+    position: absolute;
+    transform: rotate(90deg);
+    right: -75px;
+    width: 170px;
+  }
+  #bubbles-scale-mobile-left .tick-mark {
+    position: absolute;
+    border-top: 2px solid;
+    padding-top: 3px;
+    right: 0;
+    font-size: 10px;
+  }
+  #bubbles-scale-mobile-left .tick-mark-hundred {
+    bottom: 9vh;
+  }
+  #bubbles-scale-mobile-left .tick-mark-four-hundred {
+    bottom: 45vh;
+  }
+  .form-wrapper h2 {
+    margin: 0;
+  }
+  .form-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .form-wrapper label {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .mobile-hidden {
     display: none;
   }
 }
@@ -1014,7 +1515,9 @@ blockquote strong {
 .mute .infobox {
   display: none !important;
 }
+.unscroll #casualties,
 .unscroll #subgroup,
+.unscroll #dots,
 .unscroll #freedom-wrapper,
 .unscroll .infobox {
   margin-top: 0;
@@ -1030,13 +1533,20 @@ blockquote strong {
   position: static !important;
   box-shadow: none;
 }
+.unscroll .expando {
+  display: none;
+}
 .unscroll .expandable .infobox-inner {
   height: auto;
 }
+.unscroll .stalin,
+.unscroll .repression,
 .unscroll .correctional-population {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
+.unscroll .stalin .infobox-inner,
+.unscroll .repression .infobox-inner,
 .unscroll .correctional-population .infobox-inner {
   height: auto !important;
 }
