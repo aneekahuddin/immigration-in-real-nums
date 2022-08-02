@@ -42,8 +42,19 @@ This code was forked from and adapted to address a different social issue than t
 
 See [SOURCES.md](https://github.com/aneekahuddin/immigration-in-real-nums/blob/master/SOURCES.md)
 
-## Extensions of this Project
+## Extensions of this Project / Iterations of the Project
+Some ideas and changes that I'm interested in pursuing:
+* Gamifying the movement (Your cursor has to walk amongst each of the people, instead of quickly scrolling through, allowing the viewer to interact with and conceptualize the amount of people on the screen)
+* Stopwatch (To allow people to see how long it takes them to scroll and digest this information)
+* Audio (Including the literal voices of chants, protests, and music to evoke another layer of emotion)
+* A Visual Poster Break (Allow viewers to scroll through popular materials shared by undocumented organizers and activists to further understand the cause and the condition)
+* Alternative Ways of Presenting Statistics (Would like to add more than the simple infoboxes you see throughout the screen)
+* Take Action Link (Route viewers to actionable items and the movement organizing in case they feel inclined after reviewing the visualization)
+
 ## Related works
 TBD
-## Feedback and Iterations of the Project
+
+## Feedback
+I would love to hear your suggestions on what else to include in the project. Feel free to fill out this [form](https://forms.gle/fQet2kELuvtZFDRN6)
+
 
