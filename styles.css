@@ -999,6 +999,7 @@ blockquote strong {
 #end-card h2 {
   font-size: 70px;
   margin-bottom: 0;
+  text-align: center;
 }
 @media (min-width: 451px) {
   #bubbles-outer {
