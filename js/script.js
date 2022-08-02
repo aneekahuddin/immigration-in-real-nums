@@ -39,6 +39,7 @@ if (!mute) {
   var until_recently_shown = false;
   var since_it_began_shown = false;
 
+  // not sure what this is doing
   var curveObserver = new IntersectionObserver(function(entries){
     entries.forEach(function(entry){
       if (entry.isIntersecting || entry.intersectionRatio > 0) {
@@ -85,6 +86,7 @@ if (!mute) {
   document.querySelectorAll('.curve-section').forEach(function(target){
     curveObserver.observe(target);
   });
+  /*
   var letterObserver = new IntersectionObserver(function(entries){
     entries.forEach(function(entry){
       if (entry.isIntersecting) {
@@ -96,7 +98,7 @@ if (!mute) {
     })
   })
   var letters = document.getElementById('animated-letters');
-  letterObserver.observe(letters);
+  letterObserver.observe(letters);*/
 
   function toggleExpand(outer, inner) {
     var outerEl = document.getElementById(outer);
