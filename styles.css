@@ -519,7 +519,7 @@ p:last-child {
   width: 57%;
 }
 .funnel-item.first:before {
-  content: '2.3 million incarcerated';
+  content: '47 million foreign born people in US';
   font-weight: normal;
   font-size: 18px;
   position: absolute;
@@ -563,7 +563,7 @@ p:last-child {
   top: -90px;
 }
 .funnel-item.second:after {
-  content: '1.38 million remaining';
+  content: '11.35 million remaining';
 }
 .funnel-item.third {
   margin-top: 45%;
@@ -915,7 +915,7 @@ blockquote strong {
 }
 .infobox-yellow .infobox-inner {
   background-color: #ffd438;
-  box-shadow: none;
+  box-shadow: -5px 5px 5px #000000ab;
 }
 #bubbles {
   transform-origin: 15% top;

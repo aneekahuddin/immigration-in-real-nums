@@ -27,6 +27,7 @@ There have been [666,441 were combat deaths](https://en.wikipedia.org/wiki/Unite
 [Apprehensions](https://www.cbp.gov/newsroom/national-media-release/cbp-releases-operational-fiscal-year-2021-statistics)
 [Non-detained docket](https://www.ice.gov/detain/detention-management#:~:text=As%20of%20August%202020%2C%20there,cases%20before%20the%20immigration%20courts.)
 [Undocumented](https://cis.org/Report/ForeignBorn-Population-Hit-Record-47-Million-April-2022)
+[Foreign-Born Population](https://cis.org/Report/ForeignBorn-Population-Hit-Record-47-Million-April-2022)
 
 ## Legal System
 
@@ -53,6 +54,7 @@ There have been [666,441 were combat deaths](https://en.wikipedia.org/wiki/Unite
 Additional Statistics:
 [Criminal Activity](https://trac.syr.edu/immigration/quickfacts/?category=eoir)
 [DOJ Study comparing US Citizens](https://www.ojp.gov/library/publications/comparing-crime-rates-between-undocumented-immigrants-legal-immigrants-and)
+[Criminal Activity Detention Statistics](https://trac.syr.edu/immigration/quickfacts/?category=detention)
 
 ## Undocumented Narratives
 [Heldáy de la Cruz, Ximena Ospina, Alan Pelaez Lopez](https://www.bustle.com/p/5-undocumented-activists-on-how-to-fight-for-immigrants-rights-2353589)
