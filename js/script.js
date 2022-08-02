@@ -85,6 +85,7 @@ if (!mute) {
   document.querySelectorAll('.curve-section').forEach(function(target){
     curveObserver.observe(target);
   });
+  /*
   var letterObserver = new IntersectionObserver(function(entries){
     entries.forEach(function(entry){
       if (entry.isIntersecting) {
@@ -97,6 +98,7 @@ if (!mute) {
   })
   var letters = document.getElementById('animated-letters');
   letterObserver.observe(letters);
+  */
 
   function toggleExpand(outer, inner) {
     var outerEl = document.getElementById(outer);
